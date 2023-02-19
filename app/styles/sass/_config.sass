@@ -39,14 +39,14 @@ $gutter: $grid-gutter-width
 @include font('Roboto', normal, 500, '../fonts/Roboto-Medium.woff2')
 @include font('Roboto', normal, 400, '../fonts/Roboto-Regular.woff2')
 @include font('Roboto', normal, 300, '../fonts/Roboto-Light.woff2')
-@include font('Roboto', normal, 100, '../fonts/Roboto-Thin.woff2')
-@include font('Roboto', italic, 900, '../fonts/Roboto-BlackItalic.woff2')
-@include font('Roboto', italic, 700, '../fonts/Roboto-BoldItalic.woff2')
-@include font('Roboto', italic, 500, '../fonts/Roboto-MediumItalic.woff2')
-@include font('Roboto', italic, 400, '../fonts/Roboto-Italic.woff2')
-@include font('Roboto', italic, 300, '../fonts/Roboto-LightItalic.woff2')
-@include font('Roboto', italic, 100, '../fonts/Roboto-ThinItalic.woff2')
-
+@include font('Raleway', normal, 700, '../fonts/Raleway-Bold.woff2')
+@include font('Raleway', normal, 400, '../fonts/Raleway-Regular.woff2')
+@include font('Lato', normal, 600, '../fonts/Lato-Semibold.woff2')
+@include font('icomoon', normal, 400, '../fonts/icomoon.eot?ytssfg')
+@include font('icomoon', normal, 400, '../fonts/icomoon.eot?ytssfg#iefix')
+@include font('icomoon', normal, 400, '../fonts/icomoon.ttf?ytssfg')
+@include font('icomoon', normal, 400, '../fonts/icomoon.woff?ytssfg')
+@include font('icomoon', normal, 400, '../fonts/icomoon.svg?ytssfg#icomoon')
 // GENERAL CSS SETTINGS
 
 ::placeholder
@@ -71,3 +71,38 @@ body
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
+
+[class^="icon-"], [class*=" icon-"]
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important
+	speak: never
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-map-marker:before
+	content: "\f041"
+
+.icon-shopping-cart:before
+	content: "\f07a"
+
+.icon-phone:before
+	content: "\f095"
+
+.icon-bolt:before
+	content: "\f0e7"
+
+.icon-flash:before
+	content: "\f0e7"
+
+.icon-angle-right:before
+	content: "\f105"
+
+.icon-location-arrow:before
+	content: "\f124"
